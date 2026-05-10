@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>N-Coin Network</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <div class="header">
+            <div class="user-info">N-Coin User</div>
+            <div class="balance-container">
+                <img src="https://img.icons8.com/color/48/gold-bars.png" width="30">
+                <span id="balance">0</span> NC
+            </div>
+        </div>
+
+        <div class="mining-section">
+            <div id="coin" class="coin"></div>
+            <div class="energy-bar">
+                <div id="energy-fill"></div>
+            </div>
+            <div class="energy-text">⚡ <span id="energy-val">1000</span>/1000</div>
+        </div>
+
+        <nav class="bottom-nav">
+            <button onclick="showTab('mine')">⚒️ Mine</button>
+            <button onclick="showTab('tasks')">📋 Tasks</button>
+            <button onclick="showTab('frens')">👥 Frens</button>
+            <button onclick="showTab('withdraw')">💰 Cash</button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
